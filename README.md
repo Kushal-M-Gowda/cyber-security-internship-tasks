@@ -16,7 +16,9 @@ Scans a target website for:
 ## Task 02 – Password Strength Checker
 `password_strength_checker.py`
 
-Evaluates password strength based on length and character variety.
+Checks a password against 5 criteria — minimum length (8+ chars), uppercase, lowercase, digit, and special character — then scores it out of 5 and classifies it as **Weak**, **Medium**, or **Strong**. Prints a pass/fail breakdown for each check plus specific improvement suggestions for any missing criteria.
+
+**Run:** `python password_strength_checker.py`
 
 ## Task 03 – Secure Login System with Attack Prevention
 `task_03_secure_login_system.py`
@@ -30,10 +32,22 @@ Implements:
 
 **Run:** `python task_03_secure_login_system.py`
 
-## Task 04 – Phishing Detection System
+## Task 04 – Phishing Detection System (URL & Email Analysis)
 `phishing_detection_system.py`
 
-Analyzes inputs (URLs/emails) for common phishing indicators.
+Analyzes a URL or a block of email text for common phishing indicators and assigns a risk score, classifying the result as **Safe** or **Suspicious**.
+
+Detects:
+- Missing HTTPS
+- Use of link-shortening services (bit.ly, tinyurl, etc.)
+- Raw IP addresses used as domains
+- Domains with multiple hyphens or unusually long names
+- Lookalike domains mimicking trusted brands (PayPal, Google, Amazon, etc.)
+- `@` symbols in URLs used to obscure the real destination
+- Suspicious keywords/phrases in email text ("verify your account", "urgent action required", etc.)
+- Excessive capital letters (urgency tactic)
+
+**Run:** `python phishing_detection_system.py`
 
 ## Tech Stack
 - Python 3
